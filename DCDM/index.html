@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -112,9 +113,9 @@
         }
 
         .card-hover:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 20px 40px rgba(209, 137, 43, 0.9);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(209, 137, 43, 0.9);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .pulse-animation {
@@ -122,8 +123,15 @@
         }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
         }
 
         .pulse-shadow {
@@ -131,8 +139,15 @@
         }
 
         @keyframes pulse-shadow {
-            0%, 100% { box-shadow: 0 4px 6px rgba(30, 64, 93, 0.1); }
-            50% { box-shadow: 0 8px 12px rgba(30, 64, 93, 0.2); }
+
+            0%,
+            100% {
+                box-shadow: 0 4px 6px rgba(30, 64, 93, 0.1);
+            }
+
+            50% {
+                box-shadow: 0 8px 12px rgba(30, 64, 93, 0.2);
+            }
         }
 
         .typing-animation {
@@ -143,13 +158,25 @@
         }
 
         @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
         }
 
         @keyframes blink-caret {
-            from, to { border-color: transparent; }
-            50% { border-color: #d1892b; }
+
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: #d1892b;
+            }
         }
 
         .floating {
@@ -157,8 +184,15 @@
         }
 
         @keyframes floating {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
         }
 
         .nav-link.active {
@@ -197,7 +231,7 @@
         .transparent-gradient-bg button {
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
         }
-        
+
         /* Custom styles for phone validation */
         .phone-error {
             color: #e53e3e;
@@ -205,7 +239,7 @@
             margin-top: 0.25rem;
             display: none;
         }
-        
+
         .success-modal {
             position: fixed;
             top: 0;
@@ -218,7 +252,7 @@
             align-items: center;
             z-index: 1000;
         }
-        
+
         .success-content {
             background-color: white;
             padding: 2rem;
@@ -227,13 +261,13 @@
             max-width: 400px;
             width: 90%;
         }
-        
+
         .loading-spinner {
             display: none;
             text-align: center;
             padding: 10px;
         }
-        
+
         .spinner {
             border: 4px solid rgba(0, 0, 0, 0.1);
             border-left: 4px solid #1e405d;
@@ -243,12 +277,17 @@
             animation: spin 1s linear infinite;
             margin: 0 auto;
         }
-        
+
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
-        
+
         /* New title animation */
         .title-animation {
             background: linear-gradient(90deg, #ffffff, #d1892b, #ffffff);
@@ -259,23 +298,33 @@
             animation: gradient-shift 3s linear infinite;
             overflow: hidden;
         }
-        
+
         @keyframes gradient-shift {
-            0% { background-position: 0% center; }
-            100% { background-position: 200% center; }
+            0% {
+                background-position: 0% center;
+            }
+
+            100% {
+                background-position: 200% center;
+            }
         }
-        
+
         .title-typing {
             overflow: hidden;
             white-space: nowrap;
             animation: typing 3s steps(30, end);
         }
-        
+
         @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
         }
-        
+
         /* Professional DCDM title styling */
         .dcdm-title {
             font-family: 'Arial', sans-serif;
@@ -287,7 +336,7 @@
             position: relative;
             transition: color 0.3s ease;
         }
-        
+
         .dcdm-title::after {
             content: '';
             position: absolute;
@@ -298,41 +347,41 @@
             background: linear-gradient(90deg, transparent, #d1892b, transparent);
             border-radius: 2px;
         }
-        
+
         .scrolled .dcdm-title {
             color: #1e405d;
         }
-        
+
         .logo-container {
             width: 50px;
-            height:70px;
+            height: 70px;
             border-radius: 20px;
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            
+
         }
-        
-        
+
+
         /* Hero title responsive adjustments */
         .hero-title {
             font-size: 2.5rem;
             line-height: 1.2;
         }
-        
+
         @media (min-width: 768px) {
             .hero-title {
                 font-size: 3.5rem;
             }
         }
-        
+
         @media (min-width: 1024px) {
             .hero-title {
                 font-size: 4.5rem;
             }
         }
-        
+
         /* New Hero Title Styles */
         .hero-main-title {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -349,18 +398,21 @@
             letter-spacing: 1px;
             text-shadow: 0 2px 10px rgba(209, 137, 43, 0.3);
         }
-        
+
         @keyframes shimmer {
-            0%, 100% {
+
+            0%,
+            100% {
                 background-position: 0% center;
                 transform: scale(1);
             }
+
             50% {
                 background-position: 100% center;
                 transform: scale(1.02);
             }
         }
-        
+
         .hero-main-title::before {
             content: '';
             position: absolute;
@@ -374,41 +426,44 @@
             opacity: 0;
             transition: opacity 0.3s ease;
         }
-        
+
         .hero-main-title:hover::before {
             opacity: 1;
         }
-        
+
         .hero-main-title:hover {
             animation: shimmer 1s ease-in-out infinite, pulse-glow 2s ease-in-out infinite;
         }
-        
+
         @keyframes pulse-glow {
-            0%, 100% {
+
+            0%,
+            100% {
                 text-shadow: 0 2px 10px rgba(209, 137, 43, 0.3),
-                           0 0 20px rgba(209, 137, 43, 0.1);
+                    0 0 20px rgba(209, 137, 43, 0.1);
             }
+
             50% {
                 text-shadow: 0 2px 20px rgba(209, 137, 43, 0.5),
-                           0 0 30px rgba(209, 137, 43, 0.2),
-                           0 0 40px rgba(209, 137, 43, 0.1);
+                    0 0 30px rgba(209, 137, 43, 0.2),
+                    0 0 40px rgba(209, 137, 43, 0.1);
             }
         }
-        
+
         /* Interactive cursor effect */
         .hero-section {
             cursor: default;
         }
-        
+
         .hero-main-title {
             cursor: pointer;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        
+
         .hero-main-title:active {
             transform: scale(0.98);
         }
-        
+
         /* Mobile optimization for new title */
         @media (max-width: 768px) {
             .hero-main-title {
@@ -416,7 +471,7 @@
                 letter-spacing: 0.5px;
             }
         }
-        
+
         @media (max-width: 480px) {
             .hero-main-title {
                 font-size: 2.2rem;
@@ -484,7 +539,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
             transition: all 0.6s;
         }
 
@@ -502,6 +557,7 @@
                 opacity: 0;
                 transform: scale(0.8);
             }
+
             100% {
                 opacity: 1;
                 transform: scale(1);
@@ -514,13 +570,13 @@
             overflow: hidden;
             padding: 2rem 0;
         }
-        
+
         .success-stories-track {
             display: flex;
             transition: transform 0.5s ease-in-out;
             height: 100%;
         }
-        
+
         .success-story-card {
             min-width: 100%;
             padding: 0 1rem;
@@ -529,7 +585,7 @@
             justify-content: center;
             align-items: center;
         }
-        
+
         .success-card {
             background: white;
             border-radius: 12px;
@@ -543,19 +599,19 @@
             position: relative;
             border-left: 5px solid #d1892b;
         }
-        
+
         .success-card-content {
             flex: 1;
             display: flex;
             flex-direction: column;
         }
-        
+
         .success-card-header {
             display: flex;
             align-items: center;
             margin-bottom: 1.5rem;
         }
-        
+
         .success-avatar {
             width: 80px;
             height: 80px;
@@ -564,30 +620,30 @@
             margin-right: 1.5rem;
             border: 3px solid #d1892b;
         }
-        
+
         .success-avatar img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        
+
         .success-info {
             flex: 1;
         }
-        
+
         .success-name {
             font-size: 1.5rem;
             font-weight: 700;
             color: #1e405d;
             margin-bottom: 0.25rem;
         }
-        
+
         .success-course {
             font-size: 1rem;
             color: #666;
             margin-bottom: 0.5rem;
         }
-        
+
         .success-profession {
             display: inline-block;
             background: linear-gradient(135deg, #1e405d, #2a5a7f);
@@ -597,7 +653,7 @@
             font-size: 0.85rem;
             font-weight: 600;
         }
-        
+
         .success-quote {
             font-size: 1.1rem;
             line-height: 1.7;
@@ -606,7 +662,7 @@
             position: relative;
             padding: 1.5rem 0;
         }
-        
+
         .success-quote::before {
             content: '"';
             font-size: 4rem;
@@ -617,7 +673,7 @@
             opacity: 0.3;
             font-family: serif;
         }
-        
+
         .success-quote::after {
             content: '"';
             font-size: 4rem;
@@ -628,7 +684,7 @@
             opacity: 0.3;
             font-family: serif;
         }
-        
+
         .success-stories-nav {
             position: absolute;
             bottom: 20px;
@@ -638,7 +694,7 @@
             justify-content: center;
             gap: 10px;
         }
-        
+
         .success-stories-dot {
             width: 12px;
             height: 12px;
@@ -647,11 +703,11 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-        
+
         .success-stories-dot.active {
             background-color: white;
         }
-        
+
         .success-stories-arrow {
             position: absolute;
             top: 50%;
@@ -670,61 +726,61 @@
             transition: all 0.3s ease;
             z-index: 10;
         }
-        
+
         .success-stories-arrow:hover {
             background-color: white;
         }
-        
+
         .success-stories-arrow.prev {
             left: 20px;
         }
-        
+
         .success-stories-arrow.next {
             right: 20px;
         }
-        
+
         /* Mobile responsive styles for success stories */
         @media (max-width: 768px) {
             .success-card {
                 padding: 1.5rem;
                 min-height: 350px;
             }
-            
+
             .success-card-header {
                 flex-direction: column;
                 text-align: center;
             }
-            
+
             .success-avatar {
                 margin-right: 0;
                 margin-bottom: 1rem;
             }
-            
+
             .success-stories-arrow {
                 width: 35px;
                 height: 35px;
                 font-size: 16px;
             }
-            
+
             .success-stories-arrow.prev {
                 left: 10px;
             }
-            
+
             .success-stories-arrow.next {
                 right: 10px;
             }
-            
+
             .success-quote {
                 font-size: 1rem;
                 padding: 1rem 0;
             }
-            
+
             .success-quote::before {
                 font-size: 3rem;
                 top: -0.5rem;
                 left: -0.5rem;
             }
-            
+
             .success-quote::after {
                 font-size: 3rem;
                 bottom: -1.5rem;
@@ -798,17 +854,17 @@
             margin-top: auto;
             padding-top: 1rem;
         }
-        
+
         /* Professional Success Stories Animation */
         .testimonial-slide {
             opacity: 0;
             transition: opacity 0.5s ease;
         }
-        
+
         .testimonial-slide.active {
             opacity: 1;
         }
-        
+
         .profession-badge {
             background: linear-gradient(135deg, #1e405d, #2a5a7f);
             color: white;
@@ -819,17 +875,24 @@
             display: inline-block;
             margin-top: 8px;
         }
-        
+
         /* Blinking enquiry button */
         .blink {
             animation: blink 2s infinite;
         }
-        
+
         @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.8; }
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.8;
+            }
         }
-        
+
         /* Perfect card alignment - FIXED HEIGHT */
         .perfect-card {
             height: 380px;
@@ -837,18 +900,18 @@
             flex-direction: column;
             transition: all 0.3s ease;
         }
-        
+
         .perfect-card-content {
             flex: 1;
             display: flex;
             flex-direction: column;
         }
-        
+
         .perfect-card-button {
             margin-top: auto;
             width: 100%;
         }
-        
+
         /* Course grid with consistent alignment - 3 CARDS PER ROW */
         .course-grid {
             display: grid;
@@ -856,37 +919,39 @@
             gap: 1.5rem;
             align-items: stretch;
         }
-        
+
         /* Ensure all cards have the same height */
         .course-card-wrapper {
             display: flex;
             flex-direction: column;
             height: 100%;
         }
-        
+
         /* Updated Navbar Styles */
-.navbar-container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
+        .navbar-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
 
-.nav-links-container {
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-    justify-content: center;
-    flex-grow: 1;
-    margin-left: 70px;
-}
+        .nav-links-container {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            justify-content: center;
+            flex-grow: 1;
+            margin-left: 70px;
+        }
 
-.enquiry-btn-container {
-    margin-left: auto;      /* pushes to far right */
-    margin-right: 0;        /* ensures no gap */
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
+        .enquiry-btn-container {
+            margin-left: auto;
+            /* pushes to far right */
+            margin-right: 0;
+            /* ensures no gap */
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
 
         /* Mobile menu styles */
         .mobile-menu-btn {
@@ -897,7 +962,7 @@
             cursor: pointer;
             color: #1e405d;
         }
-        
+
         .mobile-menu {
             display: none;
             position: absolute;
@@ -908,11 +973,11 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             z-index: 100;
         }
-        
+
         .mobile-menu.active {
             display: block;
         }
-        
+
         .mobile-nav-link {
             display: block;
             padding: 1rem 1.5rem;
@@ -921,11 +986,11 @@
             border-bottom: 1px solid #f0f0f0;
             transition: background-color 0.3s ease;
         }
-        
+
         .mobile-nav-link:hover {
             background-color: #f9f9f9;
         }
-        
+
         /* Mobile testimonial card styles */
         @media (max-width: 768px) {
             .testimonial-card {
@@ -933,52 +998,56 @@
                 min-height: 350px;
                 padding: 1.5rem;
             }
-            
-           .testimonial-card p {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 6;
-  overflow: hidden;
-  /* text-overflow only works for single-line in many browsers, but we keep it */
-  text-overflow: ellipsis;
-  line-height: 1.5;
-  max-height: calc(1.5em * 6);  /* 6 lines × 1.5em line height */
-}
+
+            .testimonial-card p {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 6;
+                overflow: hidden;
+                /* text-overflow only works for single-line in many browsers, but we keep it */
+                text-overflow: ellipsis;
+                line-height: 1.5;
+                max-height: calc(1.5em * 6);
+                /* 6 lines × 1.5em line height */
+            }
 
         }
-        
+
         @media (max-width: 1024px) {
             .course-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-        
+
         @media (max-width: 768px) {
             .nav-links-container {
                 display: none;
             }
-            
+
             .mobile-menu-btn {
                 display: block;
             }
-            
+
             .enquiry-btn-container {
-                display: none; /* Hide enquiry button in mobile */
+                display: none;
+                /* Hide enquiry button in mobile */
             }
-            
+
             .course-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             /* Updated mobile styles for logo and toggle button */
             .logo-container {
-                margin-left: 0; /* Remove the left margin on mobile */
+                margin-left: 0;
+                /* Remove the left margin on mobile */
             }
-            
+
             .navbar-container {
-                justify-content: space-between; /* Space between logo and toggle button */
+                justify-content: space-between;
+                /* Space between logo and toggle button */
             }
-            
+
             .mobile-toggle-container {
                 display: flex;
                 align-items: center;
@@ -986,116 +1055,126 @@
         }
     </style>
 </head>
+
 <body class="bg-gray-50">
     <!-- Navigation -->
-<nav class="bg-white shadow-lg fixed w-full top-0 z-50 transition-all duration-300" id="navbar">
-    <div class="w-full"> <!-- remove max-width and padding here -->
-        <div class="navbar-container h-16 px-4"> <!-- Added padding for mobile -->
-            <!-- Logo moved to left side -->
-            <div class="flex items-center">
-                <div class="logo-container mr-3">
-                    <img src="DCDM.png" alt="DCDM Logo">
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50 transition-all duration-300" id="navbar">
+        <div class="w-full"> <!-- remove max-width and padding here -->
+            <div class="navbar-container h-16 px-4"> <!-- Added padding for mobile -->
+                <!-- Logo moved to left side -->
+                <div class="flex items-center">
+                    <div class="logo-container mr-3">
+                        <img src="DCDM.png" alt="DCDM Logo">
+                    </div>
+                    <div class="dcdm-title">DCDM</div>
                 </div>
-                <div class="dcdm-title">DCDM</div>
+
+                <!-- Desktop Navigation Links -->
+                <div class="nav-links-container">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#courses" class="nav-link">Courses</a>
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                    <a href="#success-stories" class="nav-link">Success</a>
+                    <a href="#blog" class="nav-link">Blog</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+
+                <!-- Desktop Enquiry Button and Mobile Toggle -->
+                <div class="flex items-center gap-4">
+                    <!-- Desktop Enquiry Button -->
+                    <div class="enquiry-btn-container">
+                        <button onclick="showEnquiryModal()"
+                            class="enquiry-btn bg-secondary text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-all blink">
+                            Enquiry Now
+                        </button>
+                    </div>
+
+                    <!-- Mobile Toggle Button -->
+                    <div class="mobile-toggle-container">
+                        <button id="mobile-menu-btn" class="mobile-menu-btn">
+                            ☰
+                        </button>
+                    </div>
+                </div>
             </div>
 
-            <!-- Desktop Navigation Links -->
-            <div class="nav-links-container">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#courses" class="nav-link">Courses</a>
-                <a href="#how-it-works" class="nav-link">How It Works</a>
-                <a href="#success-stories" class="nav-link">Success</a>
-                <a href="#blog" class="nav-link">Blog</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-
-            <!-- Desktop Enquiry Button and Mobile Toggle -->
-            <div class="flex items-center gap-4">
-                <!-- Desktop Enquiry Button -->
-                <div class="enquiry-btn-container">
-                    <button onclick="showEnquiryModal()" class="enquiry-btn bg-secondary text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-all blink">
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu">
+                <a href="#home" class="mobile-nav-link" onclick="closeMobileMenu()">Home</a>
+                <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">About</a>
+                <a href="#courses" class="mobile-nav-link" onclick="closeMobileMenu()">Courses</a>
+                <a href="#how-it-works" class="mobile-nav-link" onclick="closeMobileMenu()">How It Works</a>
+                <a href="#success-stories" class="mobile-nav-link" onclick="closeMobileMenu()">Success</a>
+                <a href="#blog" class="mobile-nav-link" onclick="closeMobileMenu()">Blog</a>
+                <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
+                <!-- Mobile Enquiry Button in Menu -->
+                <div class="p-4 border-t border-gray-200">
+                    <button onclick="showEnquiryModal(); closeMobileMenu();"
+                        class="w-full bg-secondary text-white py-3 rounded-lg hover:bg-opacity-90 transition-all font-semibold">
                         Enquiry Now
                     </button>
                 </div>
-                
-                <!-- Mobile Toggle Button -->
-                <div class="mobile-toggle-container">
-                    <button id="mobile-menu-btn" class="mobile-menu-btn">
-                        ☰
-                    </button>
-                </div>
             </div>
         </div>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="mobile-menu">
-            <a href="#home" class="mobile-nav-link" onclick="closeMobileMenu()">Home</a>
-            <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">About</a>
-            <a href="#courses" class="mobile-nav-link" onclick="closeMobileMenu()">Courses</a>
-            <a href="#how-it-works" class="mobile-nav-link" onclick="closeMobileMenu()">How It Works</a>
-            <a href="#success-stories" class="mobile-nav-link" onclick="closeMobileMenu()">Success</a>
-            <a href="#blog" class="mobile-nav-link" onclick="closeMobileMenu()">Blog</a>
-            <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
-            <!-- Mobile Enquiry Button in Menu -->
-            <div class="p-4 border-t border-gray-200">
-                <button onclick="showEnquiryModal(); closeMobileMenu();" class="w-full bg-secondary text-white py-3 rounded-lg hover:bg-opacity-90 transition-all font-semibold">
-                    Enquiry Now
-                </button>
-            </div>
-        </div>
-    </div>
-</nav>
+    </nav>
 
-   <!-- Home Section - Fixed Layout -->
-<section id="home" class="pt-20 md:pt-16 gradient-bg text-white min-h-[80vh] md:min-h-[70vh] flex items-center relative hero-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-8 md:py-12 relative">
-        <div class="grid md:grid-cols-3 gap-8 md:gap-16 items-center"> <!-- Increased gap on desktop -->
-            <!-- Title Section - More Space -->
-            <div class="fade-in md:col-span-2 relative z-10">
-                <h1 class="hero-title font-bold mb-6 leading-tight hero-main-title">
-                    Degree Chahiye Degree Milega
-                </h1>
-                <p class="text-lg md:text-xl mb-8 opacity-90 max-w-2xl">
-                    Transform your career with accredited degrees and professional courses. Your success story starts here with DCDM.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <button onclick="showEnquiryModal()" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all pulse-shadow w-fit">
-                        Enquiry
-                    </button>
-                    <button onclick="scrollToSection('courses')" class="bg-secondary text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all w-fit">
-                        Get Started
-                    </button>
+    <!-- Home Section - Fixed Layout -->
+    <section id="home"
+        class="pt-20 md:pt-16 gradient-bg text-white min-h-[80vh] md:min-h-[70vh] flex items-center relative hero-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-8 md:py-12 relative">
+            <div class="grid md:grid-cols-3 gap-8 md:gap-16 items-center"> <!-- Increased gap on desktop -->
+                <!-- Title Section - More Space -->
+                <div class="fade-in md:col-span-2 relative z-10">
+                    <h1 class="hero-title font-bold mb-6 leading-tight hero-main-title">
+                        Degree Chahiye Degree Milega
+                    </h1>
+                    <p class="text-lg md:text-xl mb-8 opacity-90 max-w-2xl">
+                        Transform your career with accredited degrees and professional courses. Your success story
+                        starts here with DCDM.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button onclick="showEnquiryModal()"
+                            class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all pulse-shadow w-fit">
+                            Enquiry
+                        </button>
+                        <button onclick="scrollToSection('courses')"
+                            class="bg-secondary text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all w-fit">
+                            Get Started
+                        </button>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- Smaller Card - Moved further to the right -->
-            <div class="slide-in-right floating mt-8 md:mt-0 relative z-20 md:ml-16"> <!-- Increased left margin to move card right -->
-                <div class="bg-white bg-opacity-10 p-6 md:p-8 rounded-2xl backdrop-blur-sm border border-white border-opacity-20 max-w-xs mx-auto md:max-w-sm lg:max-w-md"> <!-- Increased max-width constraints -->
-                    <h3 class="text-xl md:text-2xl font-bold mb-4">Why Choose DCDM?</h3>
-                    <ul class="space-y-3 text-sm md:text-base">
-                        <li class="flex items-center">
-                            <span class="text-secondary mr-3 text-lg">✓</span>
-                            <span>Accredited Programs</span>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="text-secondary mr-3 text-lg">✓</span>
-                            <span>Expert Instructors</span>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="text-secondary mr-3 text-lg">✓</span>
-                            <span>Flexible Learning</span>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="text-secondary mr-3 text-lg">✓</span>
-                            <span>Career Support</span>
-                        </li>
-                    </ul>
+
+                <!-- Smaller Card - Moved further to the right -->
+                <div class="slide-in-right floating mt-8 md:mt-0 relative z-20 md:ml-16">
+                    <!-- Increased left margin to move card right -->
+                    <div
+                        class="bg-white bg-opacity-10 p-6 md:p-8 rounded-2xl backdrop-blur-sm border border-white border-opacity-20 max-w-xs mx-auto md:max-w-sm lg:max-w-md">
+                        <!-- Increased max-width constraints -->
+                        <h3 class="text-xl md:text-2xl font-bold mb-4">Why Choose DCDM?</h3>
+                        <ul class="space-y-3 text-sm md:text-base">
+                            <li class="flex items-center">
+                                <span class="text-secondary mr-3 text-lg">✓</span>
+                                <span>Accredited Programs</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-secondary mr-3 text-lg">✓</span>
+                                <span>Expert Instructors</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-secondary mr-3 text-lg">✓</span>
+                                <span>Flexible Learning</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-secondary mr-3 text-lg">✓</span>
+                                <span>Career Support</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- About Section -->
     <section id="about" class="py-20 transparent-gradient-bg">
@@ -1103,7 +1182,11 @@
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="slide-in-left">
                     <h2 class="text-4xl font-bold text-primary mb-6">About DCDM</h2>
-                    <p class="text-gray-700 mb-6 text-lg">Degree Chahiye Degree Milega is a premier online education platform dedicated to transforming the way students access higher education globally. We specialize in offering online degree programs from top-ranked universities around the world, making world-class education more accessible, affordable, and flexible for aspiring learners.</p>
+                    <p class="text-gray-700 mb-6 text-lg">Degree Chahiye Degree Milega is a premier online education
+                        platform dedicated to transforming the way students access higher education globally. We
+                        specialize in offering online degree programs from top-ranked universities around the world,
+                        making world-class education more accessible, affordable, and flexible for aspiring learners.
+                    </p>
                     <div class="space-y-4">
                         <div class="flex items-center">
                             <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center mr-4">
@@ -1128,7 +1211,11 @@
                 <div class="slide-in-right">
                     <div class="bg-gradient-to-br from-primary to-secondary p-8 rounded-2xl text-white">
                         <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
-                        <p class="mb-6">Our mission is to empower students and working professionals with globally recognized degrees that match their career aspirations, without the constraints of location, time, or financial burden. Whether you're a working professional looking to upskill or a student aiming for an international qualification, we provide a seamless pathway to academic and career success.</p>
+                        <p class="mb-6">Our mission is to empower students and working professionals with globally
+                            recognized degrees that match their career aspirations, without the constraints of location,
+                            time, or financial burden. Whether you're a working professional looking to upskill or a
+                            student aiming for an international qualification, we provide a seamless pathway to academic
+                            and career success.</p>
                         <h3 class="text-2xl font-bold mb-4">Our Values</h3>
                         <ul class="space-y-2">
                             <li>• Excellence in Education</li>
@@ -1143,30 +1230,36 @@
     </section>
 
     <!-- Courses Section -->
-    
+
     <section id="courses" class="py-20 transparent-gradient-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in">
                 <h2 class="text-4xl font-bold text-primary mb-4">All Courses & Programs</h2>
                 <p class="text-gray-600 text-lg">Choose from our comprehensive range of degree programs</p>
             </div>
-            
+
             <!-- Course Filters -->
             <div class="flex flex-wrap justify-center gap-4 mb-12 bounce-in">
-                <button onclick="filterCourses('all')" class="filter-btn bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary transition-colors">All Courses</button>
-                <button onclick="filterCourses('undergraduate')" class="filter-btn bg-white text-primary px-6 py-2 rounded-full border border-primary hover:bg-primary hover:text-white transition-colors">Undergraduate</button>
-                <button onclick="filterCourses('postgraduate')" class="filter-btn bg-white text-primary px-6 py-2 rounded-full border border-primary hover:bg-primary hover:text-white transition-colors">Postgraduate</button>
-                <button onclick="filterCourses('diploma')" class="filter-btn bg-white text-primary px-6 py-2 rounded-full border border-primary hover:bg-primary hover:text-white transition-colors">Diploma</button>
+                <button onclick="filterCourses('all')"
+                    class="filter-btn bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary transition-colors">All
+                    Courses</button>
+                <button onclick="filterCourses('undergraduate')"
+                    class="filter-btn bg-white text-primary px-6 py-2 rounded-full border border-primary hover:bg-primary hover:text-white transition-colors">Undergraduate</button>
+                <button onclick="filterCourses('postgraduate')"
+                    class="filter-btn bg-white text-primary px-6 py-2 rounded-full border border-primary hover:bg-primary hover:text-white transition-colors">Postgraduate</button>
+                <button onclick="filterCourses('diploma')"
+                    class="filter-btn bg-white text-primary px-6 py-2 rounded-full border border-primary hover:bg-primary hover:text-white transition-colors">Diploma</button>
             </div>
 
             <!-- Course Grid - 3 CARDS PER ROW -->
             <div id="course-grid" class="course-grid">
                 <!-- Courses will be populated dynamically -->
             </div>
-            
+
             <!-- View All Button -->
             <div class="text-center mt-12">
-                <button id="view-all-btn" onclick="showAllCourses()" class="bg-secondary text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all">
+                <button id="view-all-btn" onclick="showAllCourses()"
+                    class="bg-secondary text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all">
                     View All Courses
                 </button>
             </div>
@@ -1182,32 +1275,37 @@
             </div>
             <div class="grid md:grid-cols-4 gap-8">
                 <div class="text-center scale-in">
-                    <div class="w-20 h-20 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4 rotate-in">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4 rotate-in">
                         <span class="text-white text-2xl font-bold">1</span>
                     </div>
                     <h3 class="text-xl font-bold text-primary mb-2">CHOOSE A COURSE</h3>
                     <p class="text-gray-600">Browse and select from our wide range of accredited programs</p>
                 </div>
                 <div class="text-center scale-in" style="animation-delay: 0.2s;">
-                    <div class="w-20 h-20 bg-gradient-to-r from-secondary to-primary rounded-full flex items-center justify-center mx-auto mb-4 rotate-in" style="animation-delay: 0.2s;">
+                    <div class="w-20 h-20 bg-gradient-to-r from-secondary to-primary rounded-full flex items-center justify-center mx-auto mb-4 rotate-in"
+                        style="animation-delay: 0.2s;">
                         <span class="text-white text-2xl font-bold">2</span>
                     </div>
                     <h3 class="text-xl font-bold text-primary mb-2">MAKE AN ENQUIRY</h3>
                     <p class="text-gray-600">Contact us for detailed information about your chosen course</p>
                 </div>
                 <div class="text-center scale-in" style="animation-delay: 0.4s;">
-                    <div class="w-20 h-20 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4 rotate-in" style="animation-delay: 0.4s;">
+                    <div class="w-20 h-20 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4 rotate-in"
+                        style="animation-delay: 0.4s;">
                         <span class="text-white text-2xl font-bold">3</span>
                     </div>
                     <h3 class="text-xl font-bold text-primary mb-2">PAY & ENROLL</h3>
                     <p class="text-gray-600">Complete enrollment with flexible payment options</p>
                 </div>
                 <div class="text-center scale-in" style="animation-delay: 0.6s;">
-                    <div class="w-20 h-20 bg-gradient-to-r from-secondary to-primary rounded-full flex items-center justify-center mx-auto mb-4 rotate-in" style="animation-delay: 0.6s;">
+                    <div class="w-20 h-20 bg-gradient-to-r from-secondary to-primary rounded-full flex items-center justify-center mx-auto mb-4 rotate-in"
+                        style="animation-delay: 0.6s;">
                         <span class="text-white text-2xl font-bold">4</span>
                     </div>
                     <h3 class="text-xl font-bold text-primary mb-2">COMPLETE DEGREE</h3>
-                    <p class="text-gray-600">Access course materials, learn at your own pace and receive your accredited degree</p>
+                    <p class="text-gray-600">Access course materials, learn at your own pace and receive your accredited
+                        degree</p>
                 </div>
             </div>
         </div>
@@ -1220,17 +1318,17 @@
                 <h2 class="text-4xl font-bold text-white mb-4">Success Stories</h2>
                 <p class="text-white text-lg">Hear from our successful graduates</p>
             </div>
-            
+
             <!-- Updated Success Stories Slider -->
             <div class="success-stories-container">
                 <div class="success-stories-track" id="success-stories-track">
                     <!-- Success stories will be populated dynamically -->
                 </div>
-                
+
                 <!-- Slider Navigation -->
                 <button class="success-stories-arrow prev" onclick="prevSuccessStory()">❮</button>
                 <button class="success-stories-arrow next" onclick="nextSuccessStory()">❯</button>
-                
+
                 <div class="success-stories-nav" id="success-stories-nav">
                     <!-- Dots will be populated dynamically -->
                 </div>
@@ -1251,19 +1349,26 @@
                         <img src="blog1.jpg" alt="Online Degrees" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-primary mb-2">The Rise of Online Degrees — Empowering India's Learners</h3>
-                        <p class="text-gray-600 mb-4">Discover how online education is transforming learning accessibility in India...</p>
-                        <button onclick="openBlog('blog1')" class="text-secondary hover:text-primary transition-colors">Read More →</button>
+                        <h3 class="text-xl font-bold text-primary mb-2">The Rise of Online Degrees — Empowering India's
+                            Learners</h3>
+                        <p class="text-gray-600 mb-4">Discover how online education is transforming learning
+                            accessibility in India...</p>
+                        <button onclick="openBlog('blog1')"
+                            class="text-secondary hover:text-primary transition-colors">Read More →</button>
                     </div>
                 </article>
-                <article class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in" style="animation-delay: 0.2s;">
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden card-hover fade-in"
+                    style="animation-delay: 0.2s;">
                     <div class="h-48 bg-gradient-to-r from-secondary to-primary flex items-center justify-center">
                         <img src="blog2.jpeg" alt="Online Learning" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-primary mb-2">Online Degrees — Advantages, Challenges, and Solutions</h3>
-                        <p class="text-gray-600 mb-4">Explore the benefits and challenges of online learning and how to overcome them...</p>
-                        <button onclick="openBlog('blog2')" class="text-secondary hover:text-primary transition-colors">Read More →</button>
+                        <h3 class="text-xl font-bold text-primary mb-2">Online Degrees — Advantages, Challenges, and
+                            Solutions</h3>
+                        <p class="text-gray-600 mb-4">Explore the benefits and challenges of online learning and how to
+                            overcome them...</p>
+                        <button onclick="openBlog('blog2')"
+                            class="text-secondary hover:text-primary transition-colors">Read More →</button>
                     </div>
                 </article>
                 <article class="bg-white rounded-xl shadow-lg overflow-hidden card-hover slide-in-right">
@@ -1272,8 +1377,10 @@
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-primary mb-2">The Future of Online Education in India</h3>
-                        <p class="text-gray-600 mb-4">Learn about the trends shaping the future of digital education in India...</p>
-                        <button onclick="openBlog('blog3')" class="text-secondary hover:text-primary transition-colors">Read More →</button>
+                        <p class="text-gray-600 mb-4">Learn about the trends shaping the future of digital education in
+                            India...</p>
+                        <button onclick="openBlog('blog3')"
+                            class="text-secondary hover:text-primary transition-colors">Read More →</button>
                     </div>
                 </article>
             </div>
@@ -1285,90 +1392,92 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in">
                 <h2 class="text-4xl font-bold mb-4">Get in Touch</h2>
-                <p class="text-white text-lg opacity-90">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                <p class="text-white text-lg opacity-90">We'd love to hear from you. Send us a message and we'll respond
+                    as soon as possible.</p>
             </div>
-            
+
             <div class="grid md:grid-cols-2 gap-12 items-start">
                 <!-- Contact Form - Left Side -->
                 <div class="slide-in-left">
-                    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-8 border border-white border-opacity-20">
+                    <div
+                        class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-8 border border-white border-opacity-20">
                         <h3 class="text-2xl font-bold mb-6">Send us a Message</h3>
                         <!-- Simple Formspree form without JavaScript -->
                         <form action="https://formspree.io/f/xgvnpjvd" method="POST" class="space-y-6">
                             <div class="grid md:grid-cols-2 gap-4">
                                 <div>
                                     <label class="block text-white font-semibold mb-2">Full Name</label>
-                                    <input type="text" name="name" required 
-                                           class="w-full px-4 py-3 bg-white bg-opacity-10 border border-white border-opacity-30 rounded-lg focus:ring-2 focus:ring-white focus:border-transparent text-white placeholder-white placeholder-opacity-70">
+                                    <input type="text" name="name" required
+                                        class="w-full px-4 py-3 bg-white bg-opacity-10 border border-white border-opacity-30 rounded-lg focus:ring-2 focus:ring-white focus:border-transparent text-white placeholder-white placeholder-opacity-70">
                                 </div>
                                 <div>
                                     <label class="block text-white font-semibold mb-2">Email</label>
-                                    <input type="email" name="email" required 
-                                           class="w-full px-4 py-3 bg-white bg-opacity-10 border border-white border-opacity-30 rounded-lg focus:ring-2 focus:ring-white focus:border-transparent text-white placeholder-white placeholder-opacity-70">
+                                    <input type="email" name="email" required
+                                        class="w-full px-4 py-3 bg-white bg-opacity-10 border border-white border-opacity-30 rounded-lg focus:ring-2 focus:ring-white focus:border-transparent text-white placeholder-white placeholder-opacity-70">
                                 </div>
                             </div>
                             <div>
                                 <label class="block text-white font-semibold mb-2">Phone</label>
-                                <input type="tel" name="phone" 
-                                       class="w-full px-4 py-3 bg-white bg-opacity-10 border border-white border-opacity-30 rounded-lg focus:ring-2 focus:ring-white focus:border-transparent text-white placeholder-white placeholder-opacity-70">
+                                <input type="tel" name="phone"
+                                    class="w-full px-4 py-3 bg-white bg-opacity-10 border border-white border-opacity-30 rounded-lg focus:ring-2 focus:ring-white focus:border-transparent text-white placeholder-white placeholder-opacity-70">
                             </div>
                             <div>
                                 <label class="block text-white font-semibold mb-2">Message</label>
-                                <textarea name="message" rows="4" required 
-                                          class="w-full px-4 py-3 bg-white bg-opacity-10 border border-white border-opacity-30 rounded-lg focus:ring-2 focus:ring-white focus:border-transparent text-white placeholder-white placeholder-opacity-70"></textarea>
+                                <textarea name="message" rows="4" required
+                                    class="w-full px-4 py-3 bg-white bg-opacity-10 border border-white border-opacity-30 rounded-lg focus:ring-2 focus:ring-white focus:border-transparent text-white placeholder-white placeholder-opacity-70"></textarea>
                             </div>
                             <!-- Hidden field for subject -->
                             <input type="hidden" name="_subject" value="Contact Form - DCDM Website">
-                            <button type="submit" class="w-full bg-white text-primary py-3 rounded-lg hover:bg-opacity-90 transition-colors font-semibold">
+                            <button type="submit"
+                                class="w-full bg-white text-primary py-3 rounded-lg hover:bg-opacity-90 transition-colors font-semibold">
                                 Send Message
                             </button>
                         </form>
                     </div>
                 </div>
-                
+
                 <!-- Contact Info & Map - Right Side -->
                 <div class="slide-in-right">
                     <div class="space-y-8">
                         <!-- Contact Info -->
-                        <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-12 border border-white border-opacity-20">
+                        <div
+                            class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-12 border border-white border-opacity-20">
                             <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
                             <div class="space-y-6">
                                 <div class="flex items-start">
-                                    <div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mr-4">
+                                    <div
+                                        class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mr-4">
                                         <span class="text-white text-xl">📍</span>
                                     </div>
                                     <div>
                                         <h4 class="font-bold text-white mb-2">Address</h4>
                                         <p class="text-white opacity-90">
-                                            <a href="https://maps.google.com/?q=Parkstreet, Kolkata- 700016" 
-                                               target="_blank" 
-                                               class="text-white hover:text-opacity-80 transition-colors">
+                                            <a href="https://maps.google.com/?q=Parkstreet, Kolkata- 700016"
+                                                target="_blank"
+                                                class="text-white hover:text-opacity-80 transition-colors">
                                                 Parkstreet, Kolkata- 700016
                                             </a>
                                         </p>
                                     </div>
                                 </div>
-                                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl overflow-hidden border border-white border-opacity-20">
-                            <div class="p-6">
-                                <h4 class="font-bold text-white mb-4">Find Us</h4>
-                            </div>
-                            <div class="h-60">
-                                <iframe 
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.454292663344!2d78.39143247499303!3d17.39895698349914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96df7e8a83a5%3A0x7c6fd58f8f5b6f2f!2sRoad%20No.%2036%2C%20Aditya%20Enclave%2C%20Venkatagiri%2C%20Madhapur%2C%20Hyderabad%2C%20Telangana%20500033!5e0!3m2!1sen!2sin!4v1698765432101!5m2!1sen!2sin" 
-                                    width="100%" 
-                                    height="100%" 
-                                    style="border:0;" 
-                                    allowfullscreen="" 
-                                    loading="lazy" 
-                                    referrerpolicy="no-referrer-when-downgrade">
-                                </iframe>
-                            </div>
-                        </div>
+                                <div
+                                    class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl overflow-hidden border border-white border-opacity-20">
+                                    <div class="p-6">
+                                        <h4 class="font-bold text-white mb-4">Find Us</h4>
+                                    </div>
+                                    <div class="h-60">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.454292663344!2d78.39143247499303!3d17.39895698349914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96df7e8a83a5%3A0x7c6fd58f8f5b6f2f!2sRoad%20No.%2036%2C%20Aditya%20Enclave%2C%20Venkatagiri%2C%20Madhapur%2C%20Hyderabad%2C%20Telangana%20500033!5e0!3m2!1sen!2sin!4v1698765432101!5m2!1sen!2sin"
+                                            width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                        </iframe>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        
+
                         <!-- Google Map -->
-                        
+
                     </div>
                 </div>
             </div>
@@ -1381,8 +1490,9 @@
             <div class="grid md:grid-cols-4 gap-8">
                 <div class="fade-in">
                     <h3 class="text-2xl font-bold mb-4">DCDM</h3>
-                    <p class="text-gray-300 mb-4">Empowering dreams through quality education. Your success is our mission.</p>
-                    
+                    <p class="text-gray-300 mb-4">Empowering dreams through quality education. Your success is our
+                        mission.</p>
+
                     <!-- Contact Info in Footer -->
                     <div class="mb-6 space-y-3">
                         <div class="flex items-center">
@@ -1398,29 +1508,37 @@
                             <span class="text-gray-300">abhirup.anand@degreechahiye.com</span>
                         </div>
                     </div>
-                    
+
                     <!-- Social Media in Footer -->
                     <div class="mb-4">
                         <h4 class="text-lg font-semibold mb-3">Follow Us</h4>
                         <div class="flex space-x-3">
-                            <a href="#  " class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-colors">
+                            <a href="#  "
+                                class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-colors">
                                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                                 </svg>
                             </a>
-                            <a href="http://linkedin.com/company/degree-chahiye/" class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-colors">
+                            <a href="http://linkedin.com/company/degree-chahiye/"
+                                class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-colors">
                                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                                 </svg>
                             </a>
-                            <a href="https://www.instagram.com/degree_chahiye_degree_milega/" class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-colors">
+                            <a href="https://www.instagram.com/degree_chahiye_degree_milega/"
+                                class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-colors">
                                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                                 </svg>
                             </a>
-                            <a href="#" class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-colors">
+                            <a href="#"
+                                class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-colors">
                                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893 0-3.176-1.24-6.165-3.495-8.411"/>
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893 0-3.176-1.24-6.165-3.495-8.411" />
                                 </svg>
                             </a>
                         </div>
@@ -1432,7 +1550,8 @@
                         <li><a href="#home" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
                         <li><a href="#about" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
                         <li><a href="#courses" class="text-gray-300 hover:text-white transition-colors">Courses</a></li>
-                        <li><a href="#success-stories" class="text-gray-300 hover:text-white transition-colors">Success</a></li>
+                        <li><a href="#success-stories"
+                                class="text-gray-300 hover:text-white transition-colors">Success</a></li>
                     </ul>
                 </div>
                 <div class="fade-in" style="animation-delay: 0.2s;">
@@ -1440,15 +1559,18 @@
                     <ul class="space-y-2">
                         <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Undergraduate</a></li>
                         <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Postgraduate</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Diploma Courses</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Diploma Courses</a>
+                        </li>
                         <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Certifications</a></li>
                     </ul>
                 </div>
                 <div class="fade-in" style="animation-delay: 0.3s;">
                     <h4 class="text-lg font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" onclick="showTerms()" class="text-gray-300 hover:text-white transition-colors">Terms & Conditions</a></li>
-                        <li><a href="#" onclick="showPrivacy()" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" onclick="showTerms()"
+                                class="text-gray-300 hover:text-white transition-colors">Terms & Conditions</a></li>
+                        <li><a href="#" onclick="showPrivacy()"
+                                class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
                         <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Refund Policy</a></li>
                         <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Accreditation</a></li>
                     </ul>
@@ -1466,18 +1588,20 @@
             <!-- Modal content will be inserted here -->
         </div>
     </div>
-    
+
     <!-- Success Modal -->
     <div id="success-modal" class="success-modal hidden">
         <div class="success-content">
             <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
             </div>
             <h3 class="text-2xl font-bold text-primary mb-2">Enquiry Submitted Successfully!</h3>
             <p class="text-gray-600 mb-6">Your enquiry has been sent. We will contact you shortly.</p>
-            <button onclick="redirectToHome()" class="bg-secondary text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-colors">OK</button>
+            <button onclick="redirectToHome()"
+                class="bg-secondary text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-colors">OK</button>
         </div>
     </div>
 
@@ -1486,7 +1610,8 @@
         <!-- Blog Header -->
         <div class="blog-header-section pt-20">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">The Rise of Online Degrees — Empowering India's Learners Anywhere, Anytime</h1>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">The Rise of Online Degrees — Empowering India's Learners
+                    Anywhere, Anytime</h1>
                 <p class="text-xl opacity-90">Published on: January 15, 2024</p>
             </div>
         </div>
@@ -1495,44 +1620,58 @@
             <div class="blog-content">
                 <div class="blog-section">
                     <h2 class="text-2xl font-bold text-primary mb-4">🎓 Education Without Boundaries</h2>
-                    <p class="mb-4">In today's fast-paced world, the traditional idea of classroom learning is evolving. Online degrees have become the bridge between ambition and accessibility, helping students and working professionals achieve higher education goals without disrupting their lives.</p>
-                    <p class="mb-4">At Degree Chahiye, Degree Milega, we believe education should adapt to your schedule — not the other way around. Whether you're a graduate aiming to specialize or a professional looking for a promotion, online learning offers the flexibility you need to grow.</p>
+                    <p class="mb-4">In today's fast-paced world, the traditional idea of classroom learning is evolving.
+                        Online degrees have become the bridge between ambition and accessibility, helping students and
+                        working professionals achieve higher education goals without disrupting their lives.</p>
+                    <p class="mb-4">At Degree Chahiye, Degree Milega, we believe education should adapt to your schedule
+                        — not the other way around. Whether you're a graduate aiming to specialize or a professional
+                        looking for a promotion, online learning offers the flexibility you need to grow.</p>
                 </div>
-                
+
                 <div class="blog-section">
                     <h2 class="text-2xl font-bold text-primary mb-4">💡 Why Online Degrees Matter Today</h2>
                     <div class="blog-highlight">
                         <ul class="space-y-3">
                             <li class="flex items-start">
                                 <span class="text-secondary mr-3 text-lg">✓</span>
-                                <span><strong>Flexibility & Convenience:</strong> Learn at your own pace, from anywhere in the world.</span>
+                                <span><strong>Flexibility & Convenience:</strong> Learn at your own pace, from anywhere
+                                    in the world.</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="text-secondary mr-3 text-lg">✓</span>
-                                <span><strong>Industry-Relevant Curriculum:</strong> Courses are updated frequently to meet market demands.</span>
+                                <span><strong>Industry-Relevant Curriculum:</strong> Courses are updated frequently to
+                                    meet market demands.</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="text-secondary mr-3 text-lg">✓</span>
-                                <span><strong>Cost-Effective Learning:</strong> Save on travel, relocation, and accommodation costs.</span>
+                                <span><strong>Cost-Effective Learning:</strong> Save on travel, relocation, and
+                                    accommodation costs.</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="text-secondary mr-3 text-lg">✓</span>
-                                <span><strong>Global Exposure:</strong> Many online programs include international collaborations and case studies.</span>
+                                <span><strong>Global Exposure:</strong> Many online programs include international
+                                    collaborations and case studies.</span>
                             </li>
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="blog-section">
                     <h2 class="text-2xl font-bold text-primary mb-4">🚀 The Future of Learning</h2>
-                    <p class="mb-4">Online degrees are no longer just an alternative — they are a revolution. Employers across industries now value online programs from recognized universities as much as traditional degrees.</p>
+                    <p class="mb-4">Online degrees are no longer just an alternative — they are a revolution. Employers
+                        across industries now value online programs from recognized universities as much as traditional
+                        degrees.</p>
                     <div class="blog-quote">
-                        <p>At Degree Chahiye, Degree Milega, we've helped thousands of learners choose the right online program aligned with their career goals — empowering them to learn, grow, and succeed without boundaries.</p>
+                        <p>At Degree Chahiye, Degree Milega, we've helped thousands of learners choose the right online
+                            program aligned with their career goals — empowering them to learn, grow, and succeed
+                            without boundaries.</p>
                     </div>
                 </div>
-                
+
                 <div class="mt-8 text-center">
-                    <button onclick="closeBlog()" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors">Back to Blog</button>
+                    <button onclick="closeBlog()"
+                        class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors">Back to
+                        Blog</button>
                 </div>
             </div>
         </div>
@@ -1542,7 +1681,8 @@
         <!-- Blog Header -->
         <div class="blog-header-section pt-20">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Online Degrees — Advantages, Challenges, and How to Make the Most of Them</h1>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Online Degrees — Advantages, Challenges, and How to Make
+                    the Most of Them</h1>
                 <p class="text-xl opacity-90">Published on: February 3, 2024</p>
             </div>
         </div>
@@ -1551,60 +1691,76 @@
             <div class="blog-content">
                 <div class="blog-section">
                     <h2 class="text-2xl font-bold text-primary mb-4">🌟 The Advantages You Can't Ignore</h2>
-                    <p class="mb-4">Online education has reshaped how we pursue higher learning. Some of its biggest advantages include:</p>
+                    <p class="mb-4">Online education has reshaped how we pursue higher learning. Some of its biggest
+                        advantages include:</p>
                     <div class="blog-highlight">
                         <ul class="space-y-3">
                             <li class="flex items-start">
                                 <span class="text-secondary mr-3 text-lg">✓</span>
-                                <span><strong>Work-Study Balance:</strong> Perfect for working professionals managing jobs and family.</span>
+                                <span><strong>Work-Study Balance:</strong> Perfect for working professionals managing
+                                    jobs and family.</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="text-secondary mr-3 text-lg">✓</span>
-                                <span><strong>Access to Top Universities:</strong> Enroll in leading programs without relocating.</span>
+                                <span><strong>Access to Top Universities:</strong> Enroll in leading programs without
+                                    relocating.</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="text-secondary mr-3 text-lg">✓</span>
-                                <span><strong>Skill-Based Learning:</strong> Programs are designed with employability in mind.</span>
+                                <span><strong>Skill-Based Learning:</strong> Programs are designed with employability in
+                                    mind.</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="text-secondary mr-3 text-lg">✓</span>
-                                <span><strong>24/7 Resources:</strong> Recorded lectures, digital libraries, and discussion forums are always available.</span>
+                                <span><strong>24/7 Resources:</strong> Recorded lectures, digital libraries, and
+                                    discussion forums are always available.</span>
                             </li>
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="blog-section">
                     <h2 class="text-2xl font-bold text-primary mb-4">⚠️ Challenges You Might Face</h2>
-                    <p class="mb-4">While the benefits are clear, online learning also comes with challenges — but the good news is, they're manageable!</p>
+                    <p class="mb-4">While the benefits are clear, online learning also comes with challenges — but the
+                        good news is, they're manageable!</p>
                     <div class="blog-highlight">
                         <ul class="space-y-3">
                             <li class="flex items-start">
                                 <span class="text-secondary mr-3 text-lg">!</span>
-                                <span><strong>Self-Discipline:</strong> Managing time effectively can be tough initially.</span>
+                                <span><strong>Self-Discipline:</strong> Managing time effectively can be tough
+                                    initially.</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="text-secondary mr-3 text-lg">!</span>
-                                <span><strong>Technical Requirements:</strong> A stable internet connection and basic computer skills are a must.</span>
+                                <span><strong>Technical Requirements:</strong> A stable internet connection and basic
+                                    computer skills are a must.</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="text-secondary mr-3 text-lg">!</span>
-                                <span><strong>Networking Opportunities:</strong> While different from on-campus interaction, virtual networking is growing stronger every day.</span>
+                                <span><strong>Networking Opportunities:</strong> While different from on-campus
+                                    interaction, virtual networking is growing stronger every day.</span>
                             </li>
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="blog-section">
-                    <h2 class="text-2xl font-bold text-primary mb-4">💪 Overcoming Challenges with the Right Support</h2>
-                    <p class="mb-4">That's where Degree Chahiye, Degree Milega makes a difference. Our dedicated counsellors guide you throughout — from choosing the right university to managing your coursework efficiently. We also help learners stay motivated, solve queries promptly, and connect them with placement opportunities after completion.</p>
+                    <h2 class="text-2xl font-bold text-primary mb-4">💪 Overcoming Challenges with the Right Support
+                    </h2>
+                    <p class="mb-4">That's where Degree Chahiye, Degree Milega makes a difference. Our dedicated
+                        counsellors guide you throughout — from choosing the right university to managing your
+                        coursework efficiently. We also help learners stay motivated, solve queries promptly, and
+                        connect them with placement opportunities after completion.</p>
                     <div class="blog-quote">
-                        <p>Online degrees are not just about convenience; they're about commitment — and with the right support, success is inevitable.</p>
+                        <p>Online degrees are not just about convenience; they're about commitment — and with the right
+                            support, success is inevitable.</p>
                     </div>
                 </div>
-                
+
                 <div class="mt-8 text-center">
-                    <button onclick="closeBlog()" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors">Back to Blog</button>
+                    <button onclick="closeBlog()"
+                        class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors">Back to
+                        Blog</button>
                 </div>
             </div>
         </div>
@@ -1614,7 +1770,8 @@
         <!-- Blog Header -->
         <div class="blog-header-section pt-20">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">The Future of Online Education in India — Opportunities Beyond Boundaries</h1>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">The Future of Online Education in India — Opportunities
+                    Beyond Boundaries</h1>
                 <p class="text-xl opacity-90">Published on: March 12, 2024</p>
             </div>
         </div>
@@ -1623,45 +1780,61 @@
             <div class="blog-content">
                 <div class="blog-section">
                     <h2 class="text-2xl font-bold text-primary mb-4">🚀 A Digital Revolution in Learning</h2>
-                    <p class="mb-4">India is witnessing a massive transformation in higher education. The shift toward online learning isn't just temporary — it's the future of education. With government bodies like UGC and AICTE recognizing online programs, digital learning has gained both credibility and momentum.</p>
-                    <p class="mb-4">At Degree Chahiye, Degree Milega, we see online degrees as the next big step in making higher education accessible to everyone — from urban professionals to students in smaller towns.</p>
+                    <p class="mb-4">India is witnessing a massive transformation in higher education. The shift toward
+                        online learning isn't just temporary — it's the future of education. With government bodies like
+                        UGC and AICTE recognizing online programs, digital learning has gained both credibility and
+                        momentum.</p>
+                    <p class="mb-4">At Degree Chahiye, Degree Milega, we see online degrees as the next big step in
+                        making higher education accessible to everyone — from urban professionals to students in smaller
+                        towns.</p>
                 </div>
-                
+
                 <div class="blog-section">
                     <h2 class="text-2xl font-bold text-primary mb-4">📈 Key Trends Shaping the Future</h2>
                     <div class="blog-highlight">
                         <ul class="space-y-3">
                             <li class="flex items-start">
                                 <span class="text-secondary mr-3 text-lg">→</span>
-                                <span><strong>Increased Acceptance by Employers:</strong> Top companies now recognize online degrees from accredited universities for hiring and promotions.</span>
+                                <span><strong>Increased Acceptance by Employers:</strong> Top companies now recognize
+                                    online degrees from accredited universities for hiring and promotions.</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="text-secondary mr-3 text-lg">→</span>
-                                <span><strong>Integration of AI & Technology:</strong> Interactive platforms, virtual labs, and AI-based assessments are redefining learning quality.</span>
+                                <span><strong>Integration of AI & Technology:</strong> Interactive platforms, virtual
+                                    labs, and AI-based assessments are redefining learning quality.</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="text-secondary mr-3 text-lg">→</span>
-                                <span><strong>Affordable Global Education:</strong> Partnerships with international universities are making world-class education accessible to Indian learners.</span>
+                                <span><strong>Affordable Global Education:</strong> Partnerships with international
+                                    universities are making world-class education accessible to Indian learners.</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="text-secondary mr-3 text-lg">→</span>
-                                <span><strong>Skill-Based Programs:</strong> Universities are introducing online courses focused on emerging fields like Data Science, Cybersecurity, and Digital Marketing.</span>
+                                <span><strong>Skill-Based Programs:</strong> Universities are introducing online courses
+                                    focused on emerging fields like Data Science, Cybersecurity, and Digital
+                                    Marketing.</span>
                             </li>
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="blog-section">
                     <h2 class="text-2xl font-bold text-primary mb-4">💼 The Road Ahead</h2>
-                    <p class="mb-4">By 2030, India's online education market is expected to grow exponentially — creating millions of skilled graduates ready for global opportunities.</p>
-                    <p class="mb-4">At Degree Chahiye, Degree Milega, we are proud to guide learners through this transformation — offering free counselling, expert guidance, and placement assistance to ensure their education leads to real success.</p>
+                    <p class="mb-4">By 2030, India's online education market is expected to grow exponentially —
+                        creating millions of skilled graduates ready for global opportunities.</p>
+                    <p class="mb-4">At Degree Chahiye, Degree Milega, we are proud to guide learners through this
+                        transformation — offering free counselling, expert guidance, and placement assistance to ensure
+                        their education leads to real success.</p>
                     <div class="blog-quote">
-                        <p>Online learning isn't just about convenience — it's about empowerment, inclusivity, and future readiness. The future of education is digital, and the future begins today.</p>
+                        <p>Online learning isn't just about convenience — it's about empowerment, inclusivity, and
+                            future readiness. The future of education is digital, and the future begins today.</p>
                     </div>
                 </div>
-                
+
                 <div class="mt-8 text-center">
-                    <button onclick="closeBlog()" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors">Back to Blog</button>
+                    <button onclick="closeBlog()"
+                        class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors">Back to
+                        Blog</button>
                 </div>
             </div>
         </div>
@@ -1682,35 +1855,35 @@
             });
         }, observerOptions);
 
-        
-// Section Observer for navigation highlighting - FIXED
-const sectionObserverOptions = {
-    threshold: 0.3,
-    rootMargin: '0px 0px -50px 0px'
-};
 
-const sectionObserver = new IntersectionObserver((entries) => {
-    let maxVisibleSection = null;
-    let maxRatio = 0;
-    
-    entries.forEach(entry => {
-        if (entry.isIntersecting && entry.intersectionRatio > maxRatio) {
-            maxRatio = entry.intersectionRatio;
-            maxVisibleSection = entry.target.id;
-        }
-    });
-    
-    if (maxVisibleSection) {
-        // Remove active class from all links
-        document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
-        
-        // Add active class to the corresponding link
-        const activeLink = document.querySelector(`.nav-link[href="#${maxVisibleSection}"]`);
-        if (activeLink) {
-            activeLink.classList.add('active');
-        }
-    }
-}, sectionObserverOptions);
+        // Section Observer for navigation highlighting - FIXED
+        const sectionObserverOptions = {
+            threshold: 0.3,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const sectionObserver = new IntersectionObserver((entries) => {
+            let maxVisibleSection = null;
+            let maxRatio = 0;
+
+            entries.forEach(entry => {
+                if (entry.isIntersecting && entry.intersectionRatio > maxRatio) {
+                    maxRatio = entry.intersectionRatio;
+                    maxVisibleSection = entry.target.id;
+                }
+            });
+
+            if (maxVisibleSection) {
+                // Remove active class from all links
+                document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+
+                // Add active class to the corresponding link
+                const activeLink = document.querySelector(`.nav-link[href="#${maxVisibleSection}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                }
+            }
+        }, sectionObserverOptions);
 
         // Success Stories variables
         let currentSuccessStory = 0;
@@ -1729,81 +1902,94 @@ const sectionObserver = new IntersectionObserver((entries) => {
         }
 
         // Special fix for courses section highlighting
-const coursesSectionObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting && entry.target.id === 'courses') {
-            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
-            const coursesLink = document.querySelector('.nav-link[href="#courses"]');
-            if (coursesLink) {
-                coursesLink.classList.add('active');
-            }
-        }
-    });
-}, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -10% 0px'
-});
+        const coursesSectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && entry.target.id === 'courses') {
+                    document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                    const coursesLink = document.querySelector('.nav-link[href="#courses"]');
+                    if (coursesLink) {
+                        coursesLink.classList.add('active');
+                    }
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -10% 0px'
+        });
 
         // Observe all animated elements and sections
         document.addEventListener('DOMContentLoaded', () => {
             // Observe animated elements
             const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in, .bounce-in, .rotate-in');
             animatedElements.forEach(el => observer.observe(el));
-            
+
             // Observe sections for navigation highlighting
-const sections = document.querySelectorAll('section[id]');
-sections.forEach(section => {
-    sectionObserver.observe(section);
-    // Special observation for courses section
-    if (section.id === 'courses') {
-        coursesSectionObserver.observe(section);
-    }
-});
-            
+            const sections = document.querySelectorAll('section[id]');
+            sections.forEach(section => {
+                sectionObserver.observe(section);
+                // Special observation for courses section
+                if (section.id === 'courses') {
+                    coursesSectionObserver.observe(section);
+                }
+            });
+
             // Set Home link as active by default
             document.querySelector('.nav-link[href="#home"]').classList.add('active');
-            
-              // Initialize courses with error handling
-    try {
-        loadCourses();
-        console.log('Courses loaded successfully');
-        
-        // Call debug function to check course categories
-        debugCourseCategories();
-        
-    } catch (error) {
-        console.error('Error loading courses:', error);
-    }
 
-// Initialize success stories with error handling
-try {
-    initSuccessStories();
-    console.log('Success stories loaded successfully');
-} catch (error) {
-    console.error('Error loading success stories:', error);
-}
-            
+            // Initialize courses with error handling
+            try {
+                loadCourses();
+                console.log('Courses loaded successfully');
+
+                // Call debug function to check course categories
+                debugCourseCategories();
+
+            } catch (error) {
+                console.error('Error loading courses:', error);
+            }
+
+            // Initialize success stories with error handling
+            try {
+                initSuccessStories();
+                console.log('Success stories loaded successfully');
+            } catch (error) {
+                console.error('Error loading success stories:', error);
+            }
+
             // Fix for course navigation - ensure the courses link works properly
             const courseNavLink = document.querySelector('.nav-link[href="#courses"]');
             if (courseNavLink) {
-                courseNavLink.addEventListener('click', function(e) {
+                courseNavLink.addEventListener('click', function (e) {
                     e.preventDefault();
                     scrollToSection('courses');
                 });
             }
-            
+
             // Mobile menu event listeners
             const mobileMenuBtn = document.getElementById('mobile-menu-btn');
             if (mobileMenuBtn) {
                 mobileMenuBtn.addEventListener('click', toggleMobileMenu);
             }
-            
+
             // Close mobile menu when clicking on a mobile nav link
             const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
             mobileNavLinks.forEach(link => {
-                link.addEventListener('click', closeMobileMenu);
+                link.addEventListener('click', function (e) {
+                    closeMobileMenu();
+                    // Ensure all sections and footer are restored if a blog is open
+                    closeBlog();
+                    // Scroll to section if href points to an id
+                    const targetId = link.getAttribute('href').substring(1);
+                    if (targetId === 'home') {
+                        document.getElementById('home').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    } else {
+                        scrollToSection(targetId);
+                    }
+                });
             });
-            
+
+
             // Auto show enquiry modal after 3 seconds
             setTimeout(() => {
                 showEnquiryModal();
@@ -1812,61 +1998,61 @@ try {
 
         // Success Stories data with professions
         successStoriesData = [
-    {
-        name: "Rahul Mehta",
-        course: "MBA in Marketing",
-        profession: "Marketing Manager",
-        image: "1.jpeg",
-        quote: "The free counselling session from Degree Chahiye, Degree Milega completely changed my career direction. The counsellor patiently understood my goals and suggested the best university for my MBA. Their guidance during admission and placement support after completion was outstanding. Today, I'm working with a reputed FMCG company!"
-    },
-    {
-        name: "Sneha Kulkarni",
-        course: "M.Sc. in Data Science",
-        profession: "Data Analyst",
-        image: "2.jpeg",
-        quote: "I was confused about which specialization to choose for my master's. The team helped me understand industry trends and guided me to the right program. Their student support is quick, friendly, and professional. Thanks to their advice, I landed a great job as a Data Analyst right after my course."
-    },
-    {
-        name: "Arjun Sethi",
-        course: "Working Professional (MBA in Operations)",
-        profession: "Operations Manager",
-        image: "3.jpeg",
-        quote: "Balancing a job and higher education felt impossible until I spoke with the Degree Chahiye team. They helped me select a flexible and recognized MBA program. Their placement guidance after completion helped me move into a managerial role in my company. Truly grateful for their continuous support!"
-    },
-    {
-        name: "Priya Nair",
-        course: "MCA in Cyber Security",
-        profession: "Cyber Security Analyst",
-        image: "4.jpeg",
-        quote: "The counsellors here are very knowledgeable and approachable. They guided me at every step – from choosing the right specialization to managing my assignments. Even my smallest queries were resolved quickly. I highly recommend them for anyone seeking clarity about their higher education."
-    },
-    {
-        name: "Rishabh Jain",
-        course: "MBA in HR",
-        profession: "HR Consultant",
-        image: "5.jpeg",
-        quote: "I had almost given up on pursuing a master's because of confusion and misleading information online. The free counselling from Degree Chahiye, Degree Milega gave me complete clarity. Their transparent guidance and continuous follow-up made the process smooth. I'm now placed in a reputed HR consultancy."
-    },
-    {
-        name: "Pooja Sharma",
-        course: "M.Com (Working Professional)",
-        profession: "Finance Executive",
-        image: "10.jpeg",
-        quote: "The support team is amazing! They regularly checked in during my course and helped with academic queries. After completing my M.Com, I got assistance with resume building and interview prep, which helped me secure a finance executive role. Great experience overall!"
-    }
-];
+            {
+                name: "Rahul Mehta",
+                course: "MBA in Marketing",
+                profession: "Marketing Manager",
+                image: "1.jpeg",
+                quote: "The free counselling session from Degree Chahiye, Degree Milega completely changed my career direction. The counsellor patiently understood my goals and suggested the best university for my MBA. Their guidance during admission and placement support after completion was outstanding. Today, I'm working with a reputed FMCG company!"
+            },
+            {
+                name: "Sneha Kulkarni",
+                course: "M.Sc. in Data Science",
+                profession: "Data Analyst",
+                image: "2.jpeg",
+                quote: "I was confused about which specialization to choose for my master's. The team helped me understand industry trends and guided me to the right program. Their student support is quick, friendly, and professional. Thanks to their advice, I landed a great job as a Data Analyst right after my course."
+            },
+            {
+                name: "Arjun Sethi",
+                course: "Working Professional (MBA in Operations)",
+                profession: "Operations Manager",
+                image: "3.jpeg",
+                quote: "Balancing a job and higher education felt impossible until I spoke with the Degree Chahiye team. They helped me select a flexible and recognized MBA program. Their placement guidance after completion helped me move into a managerial role in my company. Truly grateful for their continuous support!"
+            },
+            {
+                name: "Priya Nair",
+                course: "MCA in Cyber Security",
+                profession: "Cyber Security Analyst",
+                image: "4.jpeg",
+                quote: "The counsellors here are very knowledgeable and approachable. They guided me at every step – from choosing the right specialization to managing my assignments. Even my smallest queries were resolved quickly. I highly recommend them for anyone seeking clarity about their higher education."
+            },
+            {
+                name: "Rishabh Jain",
+                course: "MBA in HR",
+                profession: "HR Consultant",
+                image: "5.jpeg",
+                quote: "I had almost given up on pursuing a master's because of confusion and misleading information online. The free counselling from Degree Chahiye, Degree Milega gave me complete clarity. Their transparent guidance and continuous follow-up made the process smooth. I'm now placed in a reputed HR consultancy."
+            },
+            {
+                name: "Pooja Sharma",
+                course: "M.Com (Working Professional)",
+                profession: "Finance Executive",
+                image: "10.jpeg",
+                quote: "The support team is amazing! They regularly checked in during my course and helped with academic queries. After completing my M.Com, I got assistance with resume building and interview prep, which helped me secure a finance executive role. Great experience overall!"
+            }
+        ];
 
         // Initialize success stories with rectangular card layout
         function initSuccessStories() {
             const track = document.getElementById('success-stories-track');
             const nav = document.getElementById('success-stories-nav');
-            
+
             // Create slides for each success story
             successStoriesData.forEach((story, index) => {
                 const slide = document.createElement('div');
                 slide.className = 'success-story-card';
                 slide.style.display = index === 0 ? 'flex' : 'none';
-                
+
                 slide.innerHTML = `
                     <div class="success-card">
                         <div class="success-card-content">
@@ -1886,34 +2072,34 @@ try {
                         </div>
                     </div>
                 `;
-                
+
                 track.appendChild(slide);
-                
+
                 // Create navigation dot
                 const dot = document.createElement('div');
                 dot.className = 'success-stories-dot' + (index === 0 ? ' active' : '');
                 dot.addEventListener('click', () => goToSuccessStory(index));
                 nav.appendChild(dot);
             });
-            
+
             updateSuccessStoriesNav();
         }
 
         // Success Stories functions with professional animation
         function nextSuccessStory() {
             const slides = document.querySelectorAll('.success-story-card');
-            
+
             // Fade out current slide
             slides[currentSuccessStory].style.opacity = '0';
-            
+
             setTimeout(() => {
                 slides[currentSuccessStory].style.display = 'none';
                 currentSuccessStory = (currentSuccessStory + 1) % successStoriesData.length;
                 slides[currentSuccessStory].style.display = 'flex';
-                
+
                 // Trigger reflow
                 void slides[currentSuccessStory].offsetWidth;
-                
+
                 // Fade in next slide
                 slides[currentSuccessStory].style.opacity = '1';
                 updateSuccessStoriesNav();
@@ -1922,18 +2108,18 @@ try {
 
         function prevSuccessStory() {
             const slides = document.querySelectorAll('.success-story-card');
-            
+
             // Fade out current slide
             slides[currentSuccessStory].style.opacity = '0';
-            
+
             setTimeout(() => {
                 slides[currentSuccessStory].style.display = 'none';
                 currentSuccessStory = (currentSuccessStory - 1 + successStoriesData.length) % successStoriesData.length;
                 slides[currentSuccessStory].style.display = 'flex';
-                
+
                 // Trigger reflow
                 void slides[currentSuccessStory].offsetWidth;
-                
+
                 // Fade in previous slide
                 slides[currentSuccessStory].style.opacity = '1';
                 updateSuccessStoriesNav();
@@ -1942,18 +2128,18 @@ try {
 
         function goToSuccessStory(index) {
             const slides = document.querySelectorAll('.success-story-card');
-            
+
             // Fade out current slide
             slides[currentSuccessStory].style.opacity = '0';
-            
+
             setTimeout(() => {
                 slides[currentSuccessStory].style.display = 'none';
                 currentSuccessStory = index;
                 slides[currentSuccessStory].style.display = 'flex';
-                
+
                 // Trigger reflow
                 void slides[currentSuccessStory].offsetWidth;
-                
+
                 // Fade in selected slide
                 slides[currentSuccessStory].style.opacity = '1';
                 updateSuccessStoriesNav();
@@ -1962,7 +2148,7 @@ try {
 
         function updateSuccessStoriesNav() {
             const dots = document.querySelectorAll('.success-stories-dot');
-            
+
             dots.forEach((dot, index) => {
                 dot.classList.toggle('active', index === currentSuccessStory);
             });
@@ -2088,7 +2274,7 @@ try {
                 description: 'Cyber security and information protection',
                 icon: '🔒'
             },
-            
+
             // Postgraduate Courses
             {
                 id: 'mca-ai',
@@ -2423,7 +2609,7 @@ try {
                 description: 'Comprehensive business leadership and management',
                 icon: '🎯'
             },
-            
+
             // Diploma Programs
             {
                 id: 'diploma-finance',
@@ -2476,43 +2662,43 @@ try {
         let showingAllCourses = false;
 
         // === ADD THE DEBUG FUNCTION RIGHT HERE ===
-// Debug function to check course categories
-function debugCourseCategories() {
-    console.log("=== COURSE CATEGORY DEBUG ===");
-    const categories = {};
-    courses.forEach(course => {
-        if (!categories[course.category]) {
-            categories[course.category] = 0;
+        // Debug function to check course categories
+        function debugCourseCategories() {
+            console.log("=== COURSE CATEGORY DEBUG ===");
+            const categories = {};
+            courses.forEach(course => {
+                if (!categories[course.category]) {
+                    categories[course.category] = 0;
+                }
+                categories[course.category]++;
+                console.log(`Course: ${course.title}, Category: ${course.category}`);
+            });
+            console.log('Course categories count:', categories);
+
+            // Also log how many courses in each category
+            console.log('=== COURSE COUNT BY CATEGORY ===');
+            console.log(`Undergraduate: ${courses.filter(c => c.category === 'undergraduate').length} courses`);
+            console.log(`Postgraduate: ${courses.filter(c => c.category === 'postgraduate').length} courses`);
+            console.log(`Diploma: ${courses.filter(c => c.category === 'diploma').length} courses`);
         }
-        categories[course.category]++;
-        console.log(`Course: ${course.title}, Category: ${course.category}`);
-    });
-    console.log('Course categories count:', categories);
-    
-    // Also log how many courses in each category
-    console.log('=== COURSE COUNT BY CATEGORY ===');
-    console.log(`Undergraduate: ${courses.filter(c => c.category === 'undergraduate').length} courses`);
-    console.log(`Postgraduate: ${courses.filter(c => c.category === 'postgraduate').length} courses`);
-    console.log(`Diploma: ${courses.filter(c => c.category === 'diploma').length} courses`);
-}
-// === END OF DEBUG FUNCTION ===
+        // === END OF DEBUG FUNCTION ===
 
         // Load courses - PERFECTLY ALIGNED CARDS - 3 PER ROW
         function loadCourses() {
             // Force courses to load
             console.log('loadCourses function called');
-            
+
             const courseGrid = document.getElementById('course-grid');
             if (!courseGrid) {
                 console.error('Course grid element not found!');
                 setTimeout(loadCourses, 100);
                 return;
             }
-            
+
             let coursesToShow = showingAllCourses ? courses : courses.slice(0, 6);
-            
+
             console.log('Loading courses:', coursesToShow.length);
-            
+
             courseGrid.innerHTML = coursesToShow.map(course => `
                 <div class="course-card-wrapper">
                     <div class="perfect-card bg-white rounded-xl shadow-lg p-6 border border-gray-100 card-hover" data-category="${course.category}">
@@ -2535,20 +2721,20 @@ function debugCourseCategories() {
                     </div>
                 </div>
             `).join('');
-            
+
             // Set "All Courses" button as active by default
             const allCoursesBtn = document.querySelector('.filter-btn[onclick="filterCourses(\'all\')"]');
             if (allCoursesBtn) {
                 allCoursesBtn.classList.remove('bg-white', 'text-primary', 'border', 'border-primary');
                 allCoursesBtn.classList.add('bg-primary', 'text-white');
             }
-            
+
             // Update View All button text
             const viewAllBtn = document.getElementById('view-all-btn');
             if (viewAllBtn) {
                 viewAllBtn.textContent = showingAllCourses ? 'Show Less' : 'View All Courses';
             }
-            
+
             // Force animation after a small delay
             setTimeout(() => {
                 const cards = courseGrid.querySelectorAll('.perfect-card');
@@ -2559,15 +2745,15 @@ function debugCourseCategories() {
                 });
             }, 100);
         }
-        
+
         // Show all courses
         function showAllCourses() {
             showingAllCourses = !showingAllCourses;
-            
+
             // Get the current active filter
             const activeFilter = document.querySelector('.filter-btn.bg-primary');
             let currentCategory = 'all';
-            
+
             if (activeFilter) {
                 const onclickAttr = activeFilter.getAttribute('onclick');
                 if (onclickAttr) {
@@ -2576,26 +2762,26 @@ function debugCourseCategories() {
                     else if (onclickAttr.includes("undergraduate")) currentCategory = 'undergraduate';
                 }
             }
-            
+
             console.log(`Show all courses: ${showingAllCourses}, Current category: ${currentCategory}`);
-            
+
             // Refresh the display with the current filter
             filterCourses(currentCategory);
-            
+
             // Update button text
             const viewAllBtn = document.getElementById('view-all-btn');
             if (viewAllBtn) {
                 viewAllBtn.textContent = showingAllCourses ? 'Show Less' : 'View All Courses';
             }
         }
-        
+
         // Filter courses - FIXED ALIGNMENT
         function filterCourses(category) {
             console.log(`=== FILTERING COURSES BY: ${category} ===`);
-            
+
             const courseGrid = document.getElementById('course-grid');
             const filterBtns = document.querySelectorAll('.filter-btn');
-            
+
             // Update button styles
             filterBtns.forEach(btn => {
                 btn.classList.remove('bg-primary', 'text-white');
@@ -2603,10 +2789,10 @@ function debugCourseCategories() {
             });
             event.target.classList.remove('bg-white', 'text-primary', 'border', 'border-primary');
             event.target.classList.add('bg-primary', 'text-white');
-            
+
             // Get filtered courses
             let filteredCourses = [];
-            
+
             if (category === 'all') {
                 // Show ALL courses
                 filteredCourses = showingAllCourses ? courses : courses.slice(0, 6);
@@ -2615,18 +2801,18 @@ function debugCourseCategories() {
                 // Filter by specific category
                 filteredCourses = courses.filter(course => course.category === category);
                 console.log(`Found ${filteredCourses.length} courses for category: ${category}`);
-                
+
                 // If showing limited view, limit to 6
                 if (!showingAllCourses && filteredCourses.length > 6) {
                     filteredCourses = filteredCourses.slice(0, 6);
                 }
             }
-            
+
             console.log('Courses to display:', filteredCourses.map(c => c.title));
-            
+
             // Clear and re-render
             courseGrid.innerHTML = '';
-            
+
             if (filteredCourses.length === 0) {
                 courseGrid.innerHTML = `
                     <div class="col-span-3 text-center py-12">
@@ -2638,7 +2824,7 @@ function debugCourseCategories() {
                 `;
                 return;
             }
-            
+
             // Render filtered courses
             filteredCourses.forEach((course, index) => {
                 const courseHTML = `
@@ -2665,7 +2851,7 @@ function debugCourseCategories() {
                 `;
                 courseGrid.innerHTML += courseHTML;
             });
-            
+
             // Add animations
             setTimeout(() => {
                 const cards = courseGrid.querySelectorAll('.perfect-card');
@@ -2676,14 +2862,14 @@ function debugCourseCategories() {
                 });
             }, 100);
         }
-        
+
         // Navigation functions
         function scrollToSection(sectionId) {
             document.getElementById(sectionId).scrollIntoView({
                 behavior: 'smooth'
             });
         }
-        
+
         // Redirect to home
         function redirectToHome() {
             document.getElementById('success-modal').classList.add('hidden');
@@ -2719,9 +2905,9 @@ function debugCourseCategories() {
         function updateCourseDropdown(qualification) {
             const courseDropdown = document.getElementById('interested-course');
             courseDropdown.innerHTML = '<option value="">Select Course</option>';
-            
+
             const filteredCourses = courses.filter(course => course.category === qualification);
-            
+
             filteredCourses.forEach(course => {
                 const option = document.createElement('option');
                 option.value = course.id;
@@ -2735,11 +2921,11 @@ function debugCourseCategories() {
             // Generate course options for dropdown based on default qualification
             const defaultQualification = 'undergraduate';
             const filteredCourses = courses.filter(course => course.category === defaultQualification);
-            
-            const courseOptions = filteredCourses.map(course => 
+
+            const courseOptions = filteredCourses.map(course =>
                 `<option value="${course.id}" ${course.id === courseId ? 'selected' : ''}>${course.title}</option>`
             ).join('');
-            
+
             showModal(`
     <h2 class="text-2xl font-bold text-primary mb-6">Enquiry Form</h2>
     <form id="enquiry-form" action="https://formspree.io/f/xnngglzj" method="POST" class="space-y-4">
@@ -2780,7 +2966,7 @@ function debugCourseCategories() {
     </form>
     <button onclick="hideModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">✕</button>
 `);
-            
+
             // If a course ID is provided, set the qualification and course dropdown accordingly
             if (courseId) {
                 const course = courses.find(c => c.id === courseId);
@@ -2801,40 +2987,40 @@ function debugCourseCategories() {
             const qualification = document.getElementById('qualification').value;
             const submitBtn = document.getElementById('submit-btn');
             const loadingSpinner = document.getElementById('loading-spinner');
-            
+
             if (!validatePhoneNumber(phone)) {
                 document.getElementById('phone-error').style.display = 'block';
                 return;
             } else {
                 document.getElementById('phone-error').style.display = 'none';
             }
-            
+
             submitBtn.disabled = true;
             submitBtn.textContent = 'Sending...';
             loadingSpinner.style.display = 'block';
-            
+
             // Get course title
             const course = courses.find(c => c.id === interestedCourse);
             const courseTitle = course ? course.title : interestedCourse;
-            
+
             // Create WhatsApp message
             const message = `*New Enquiry from DCDM Website*%0A%0A*Name:* ${fullName}%0A*Email:* ${email}%0A*Phone:* ${phone}%0A*Qualification:* ${qualification}%0A*Interested Course:* ${courseTitle}`;
-            
+
             // WhatsApp number
             const whatsappNumber = '918017219711';
-            
+
             // Create WhatsApp URL
             const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
-            
+
             // Open WhatsApp in new tab
             setTimeout(() => {
                 window.open(whatsappURL, '_blank');
-                
+
                 // Reset form and show success
                 submitBtn.disabled = false;
                 submitBtn.textContent = 'Submit Enquiry';
                 loadingSpinner.style.display = 'none';
-                
+
                 hideModal();
                 document.getElementById('success-modal').classList.remove('hidden');
             }, 1000);
@@ -2846,7 +3032,7 @@ function debugCourseCategories() {
             // For now, we'll just show success since the main functionality is the user experience
             hideModal();
             document.getElementById('success-modal').classList.remove('hidden');
-            
+
             // You can implement email fallback here if needed
             console.log('Fallback triggered for enquiry:', { fullName, email, phone, qualification });
         }
@@ -2907,12 +3093,12 @@ function debugCourseCategories() {
                 section.style.display = 'none';
             });
             document.querySelector('footer').style.display = 'none';
-            
+
             // Show the selected blog
             document.getElementById(blogId).classList.remove('hidden');
             document.getElementById(blogId).style.display = 'block';
             document.body.classList.add('bg-white');
-            
+
             // Scroll to top of the blog
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
@@ -2923,42 +3109,43 @@ function debugCourseCategories() {
                 section.style.display = 'block';
             });
             document.querySelector('footer').style.display = 'block';
-            
+
             // Hide all blogs
             document.querySelectorAll('.blog-container').forEach(blog => {
                 blog.parentElement.classList.add('hidden');
                 blog.parentElement.style.display = 'none';
             });
             document.body.classList.remove('bg-white');
-            
+
             // Scroll to blog section
             scrollToSection('blog');
         }
 
         // Smooth scrolling for navigation links with active state 
         document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetId = link.getAttribute('href').substring(1);
-            
-            // Close any open blog to show main sections
-            closeBlog();
-            
-            // Remove active class from all links
-            document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-            
-            // Add active class to clicked link
-            link.classList.add('active');
-            
-            // Scroll to section, ensuring Home goes to the top of the hero section
-            if (targetId === 'home') {
-                document.getElementById('home').scrollIntoView({ behavior: 'smooth', block: 'start' });
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            } else {
-                scrollToSection(targetId);
-            }
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+
+                // Close any open blog to show main sections
+                closeBlog();
+
+                // Remove active class from all links
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+
+                // Add active class to clicked link
+                link.classList.add('active');
+
+                // Scroll to section, ensuring Home goes to the top of the hero section
+                if (targetId === 'home') {
+                    document.getElementById('home').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else {
+                    scrollToSection(targetId);
+                }
+            });
         });
-    });
+
         // Add scroll effect to navbar
         window.addEventListener('scroll', () => {
             const navbar = document.getElementById('navbar');
@@ -2968,7 +3155,8 @@ function debugCourseCategories() {
                 navbar.classList.remove('bg-opacity-95', 'backdrop-blur-sm', 'scrolled');
             }
         });
-        
+
     </script>
 </body>
+
 </html>
